@@ -38,7 +38,7 @@ Death to all those who stand in the way of freedom for the working people!
  
 You can silence this by outputting to /dev/null. After this, you will find the hello binary will also excute this quote:
 
-$ ./hello<br>        
+$ ./hello        
 Death to all those who stand in the way of freedom for the working people!<br>
 Hello!
 
@@ -48,7 +48,7 @@ $ cat ./hello.c <br>
 #include <stdio.h> <br>
 
 int main(){ <br>
-	printf("Hello!\n");<br>
+&nbsp;&nbsp;printf("Hello!\n");<br>
 }<br>
 
 Using virus strategies of the past, the modify.c file in the virus directory is used to randomly obscure this code's signature in memory. Basically making this a mutation virus as well. PTRACE has been used in trace.c to help prevent debugging. Combined with the rootkit functionality, this will make detection much more difficult, but not impossible.
