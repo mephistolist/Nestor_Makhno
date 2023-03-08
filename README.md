@@ -11,8 +11,8 @@ Diamorphine will hide any folder on the system who's name begins with "diamorphi
 To use this code, first go to the Diamorphine directory, build and install it:
 
 $ cd ./Diamorphine
-$ make
-$ sudo insmod ./diamorphine.ko
+; make
+; sudo insmod ./diamorphine.ko
 
 If you expirence errors, you most likely do not have kernel headers installed. On Debian you may install them with the following:
 
@@ -21,7 +21,7 @@ $ sudo apt search linux-headers-$(uname -r)
 Then go to the directory for the virus and build it:
 
 $ cd ../virus
-$ make
+; make
 
 To prevent abuse, there is no real payload used with this code. Instead only an infamous quote by the historical Nestor Makhno will be injected into binaries. After completing you will find a binary called 'Nester_Makhno' and another called 'hello' to be used for testing. The code is set here to only infect files in the same directory:
 
