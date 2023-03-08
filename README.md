@@ -28,7 +28,7 @@ To prevent abuse, there is no real payload used with this code. Instead only an 
 $ grep '^   scan' virus/simple.c<br>
    scan_dir(".", virus);
 
-The above location may be editted to '/' or any desired location if you have a vm or sandbox. It should go without sayinig, but DONOT RELEASE THIS CODE INTO THE WILD. THIS IS FOR TESTING AND EDUCATIONAL PURPOSES ONLY. I am not responsible for any damage this may cause and deepending on your location, running this code may be illegal on devices you do not own. So you have been warned. 
+The above location may be editted to '/' or any desired location if you have a vm or sandbox. It should go without sayinig, but DO NOT RELEASE THIS CODE INTO THE WILD. THIS IS FOR TESTING AND EDUCATIONAL PURPOSES ONLY. I am not responsible for any damage this may cause and deepending on your location, running this code may be illegal on devices you do not own. So you have been warned. 
 
 Running the code you will see the quote from our payload: 
 
