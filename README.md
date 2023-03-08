@@ -48,7 +48,7 @@ $ cat ./hello.c <br>
 #include <stdio.h> <br>
 
 int main(){ <br>
-&nbsp;&nbsp;printf("Hello!\n");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello!\n");<br>
 }<br>
 
 Using virus strategies of the past, the modify.c file in the virus directory is used to randomly obscure this code's signature in memory. Basically making this a mutation virus as well. PTRACE has been used in trace.c to help prevent debugging. Combined with the rootkit functionality, this will make detection much more difficult, but not impossible.
