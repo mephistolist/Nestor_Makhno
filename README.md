@@ -12,9 +12,11 @@ Diamorphine will hide any folder on the system who's name begins with "diamorphi
 
 To use this code, first go to the Diamorphine directory, build and install it:
 
+```
 $ cd ./Diamorphine
-; make
-; sudo insmod ./diamorphine.ko
+$ make
+$ sudo insmod ./diamorphine.ko
+```
 
 If you expirence errors, you most likely do not have kernel headers installed. On Debian you may install them with the following:
 
