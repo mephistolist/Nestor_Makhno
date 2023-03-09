@@ -71,14 +71,14 @@ Using virus strategies of the past, the modify.c file in the virus directory is 
 If you wish to make changes to this code, the following line will need to be updated:
 
 ```
-$ grep 'define PARASITE_LENGTH' simple.c<br>
+$ grep 'define PARASITE_LENGTH' simple.c
 #define PARASITE_LENGTH 14800 /* PARASITE_LENGTH the size of compiling virus */
 ```
 
 This will need to match the number of bytes in the compiled binary:
 
 ```
-$ ls -l Nestor_Makhno<br>
+$ ls -l Nestor_Makhno
 -rwxr-xr-x 1 user user 14800 Mar  9 02:19 Nestor_Makhno
 ```
 
