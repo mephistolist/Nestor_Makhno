@@ -90,6 +90,6 @@ Information on the historical Nestor Makhno may be found here:
 
 https://en.wikipedia.org/wiki/Nestor_Makhno
 
-Information on the Diamorphine may be found here:
+Information on the Diamorphine rootkit may be found here:
 
 https://github.com/bms8197/diamorphine 
