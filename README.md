@@ -1,7 +1,9 @@
 # Nestor_Makhno
 Linux virus in C that uses mutation and rootkit functionality
 
-Nestor Makhno is a simple Linux virus that uses a rootkit(Diamorphine) to help hide its tracks and avoid av detection. The historical Nestor Makhno was famous for a lot, but one thing was being the first to begin using machine guns on covered wagons. He didn't create machine guns or wagons, but he knew these things would work well together. His ideas are still credited as the first proto-tank and first drive-by shooting. The Diamorphine rootkit existed long before the virus code added here. Its mostly used to make the process invisible in the pids.c file. As-is, it will also be used to create a hidden directory in /dev/shm/diamorphine_secret_def_not_a_virus. To avoid detection we suggest renaming this directory in the code of simmple.c
+Nestor_Makhno is a simple Linux virus that uses a rootkit(Diamorphine) to help hide its tracks and avoid av detection. The historical Nestor Makhno was famous for a lot, but one thing was being the first to begin using machine guns on covered wagons. He didn't create machine guns or wagons, but he knew these things would work well together. His ideas are still credited as the first proto-tank and first drive-by shooting. Virus writing has used some of the same techniques as rootkits long before this virus code existed here. The naming of this project as Nestor_Makhno is only to pay tribute and inspire other programmers to think outside the box and barrow techiques from other malware to create betrer viri.  
+
+The Diamorphine rootkit mostly used to make the process invisible in the pids.c file. As-is, it will also be used to create a hidden directory in /dev/shm/diamorphine_secret_def_not_a_virus. To avoid detection we suggest renaming this directory in the code of simmple.c
 
 ```
 $ grep mkdir virus/simple.c
@@ -18,7 +20,7 @@ $ make
 $ sudo insmod ./diamorphine.ko
 ```
 
-If you expirence errors, you most likely do not have kernel headers installed. On Debian you may install them with the following:
+If you expirence errors with these steps, you most likely do not have kernel headers installed. On Debian you may install them with the following:
 
 ```
 $ sudo apt search linux-headers-$(uname -r)
