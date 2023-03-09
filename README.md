@@ -3,8 +3,10 @@ Linux virus in C that uses mutation and rootkit functionality
 
 Nestor Makhno is a simple Linux virus that uses a rootkit(Diamorphine) to help hide its tracks and avoid av detection. The historical Nestor Makhno was famous for a lot, but one thing was being the first to begin using machine guns on covered wagons. He didn't create machine guns or wagons, but he knew these things would work well together. His ideas are still credited as the first proto-tank and first drive-by shooting. The Diamorphine rootkit existed long before the virus code added here. Its mostly used to make the process invisible in the pids.c file. As-is, it will also be used to create a hidden directory in /dev/shm/diamorphine_secret_def_not_a_virus. To avoid detection we suggest renaming this directory in the code of simmple.c
 
-```$ grep mkdir virus/simple.c
-   mkdir("/dev/shm/diamorphine_secret_def_not_a_virus",0775);```
+```
+$ grep mkdir virus/simple.c
+   mkdir("/dev/shm/diamorphine_secret_def_not_a_virus",0775);
+```
 
 Diamorphine will hide any folder on the system who's name begins with "diamorphine_secret". So be sure to include this with any locations that should be hidden. You may also want to build and run the virus portion of Nestor_Makhno from a folder like this to avoid dectection as well. 
 
