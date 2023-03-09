@@ -10,8 +10,7 @@
 #include <fcntl.h>
 #include <pwd.h>
 
-#define PARASITE_LENGTH 23032 /* PARASITE_LENGTH the size of compiling virus */
-/* infection rate indicator */
+#define PARASITE_LENGTH 14800 /* PARASITE_LENGTH the size of compiling virus */
 #define MAGIC 6585
 #define TMPFILE_TEMPLATE "/dev/shm/diamorphine_secret_def_not_a_virus/.virusXXXXXX"
 #define MAX_BUF 1024
