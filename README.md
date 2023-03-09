@@ -53,6 +53,18 @@ int main(){ <br>
 
 Using virus strategies of the past, the modify.c file in the virus directory is used to randomly obscure this code's signature in memory. Basically making this a mutation virus as well. PTRACE has been used in trace.c to help prevent debugging. Combined with the rootkit functionality, this will make detection much more difficult, but not impossible.
 
+If you wish to make changes to this code, the following line will need to be updated:
+
+$ grep 'define PARASITE_LENGTH' simple.c<br>
+#define PARASITE_LENGTH 14800 /* PARASITE_LENGTH the size of compiling virus */
+
+This will need to match the number of bytes in the compiled binary:
+
+$ ls -l Nestor_Makhno<br>
+-rwxr-xr-x 1 user user 14800 Mar  9 02:19 Nestor_Makhno
+
+Otherwise functionality of the virus might cease to work correctly.
+
 Information on the historical Nestor Makhno may be found here:
 
 https://en.wikipedia.org/wiki/Nestor_Makhno
